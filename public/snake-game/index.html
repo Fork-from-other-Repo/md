@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake Game | Canvas + Vanilla JavaScript</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="game-shell">
+      <section class="game-card">
+        <header class="game-header">
+          <h1>Snake</h1>
+          <p>
+            Steer the neon snake with the arrow keys or WASD, eat the food pellets, and keep away from the walls and
+            your own tail.
+          </p>
+        </header>
+
+        <div class="board-wrapper">
+          <canvas id="game-board" width="400" height="400" role="img" aria-label="Snake game board"></canvas>
+        </div>
+
+        <footer class="game-footer">
+          <div class="score-block">
+            <span class="score-label">Score</span>
+            <span class="score-value" id="score-value">0</span>
+          </div>
+          <button id="restart-btn" type="button">Restart</button>
+        </footer>
+
+        <p class="game-hint">Press Space to restart at any time.</p>
+      </section>
+    </main>
+
+    <script type="module" src="./snake.js"></script>
+  </body>
+</html>
